@@ -35,7 +35,7 @@ export default function Home() {
           </dl>
         </div>
         <div className="relative">
-          <div className="absolute -inset-4 -z-10 rotate-3 rounded-[40px] bg-gradient-to-br from-indigo/20 to-teal/30" />
+          <div className="absolute -inset-2 sm:-inset-4 -z-10 rotate-3 rounded-[40px] bg-gradient-to-br from-indigo/20 to-teal/30" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/hero.png" alt="Abstract team workspace dashboard illustration" className="w-full rounded-[32px] border border-indigo/10 shadow-soft" />
         </div>
