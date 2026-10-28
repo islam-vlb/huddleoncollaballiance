@@ -107,7 +107,7 @@ export default function CheckoutPage() {
           </section>
 
           <section className="card p-6">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between gap-3">
               <h2 className="h3">Payment</h2>
               <PayLogos />
             </div>
