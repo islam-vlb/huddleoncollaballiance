@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #14123f;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-mist font-sans text-ink antialiased;
+  background-image:
+    radial-gradient(900px 400px at 100% -5%, rgba(0, 201, 177, 0.10), transparent 60%),
+    radial-gradient(800px 500px at -5% 0%, rgba(55, 48, 201, 0.10), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .section { @apply py-14 sm:py-20; }
+  .h1 { @apply font-display text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl; }
+  .h2 { @apply font-display text-2xl font-extrabold tracking-tight sm:text-4xl; }
+  .h3 { @apply font-display text-lg font-bold; }
+  .eyebrow { @apply inline-flex items-center gap-2 rounded-full bg-teal-soft px-3 py-1 text-xs font-bold uppercase tracking-wider text-teal-deep; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition duration-200 disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-gradient-to-r from-indigo to-indigo-deep text-white shadow-soft hover:-translate-y-0.5 hover:shadow-lg; }
+  .btn-teal { @apply btn bg-teal text-ink hover:-translate-y-0.5 hover:bg-[#2fe0cb]; }
+  .btn-ghost { @apply btn border-2 border-indigo/20 bg-white text-indigo hover:border-indigo; }
+  .card { @apply rounded-card border border-indigo/10 bg-white shadow-soft; }
+  .imgbox { @apply overflow-hidden rounded-2xl bg-indigo-soft; }
+  .input { @apply w-full rounded-xl border border-indigo/20 bg-white px-4 py-3 text-sm outline-none transition focus:border-indigo focus:ring-4 focus:ring-indigo/10; }
+  .label { @apply mb-1.5 block text-xs font-bold uppercase tracking-wide text-indigo-deep; }
+  .prose-legal h2 { @apply mb-3 mt-8 font-display text-xl font-bold text-indigo-deep; }
+  .prose-legal p, .prose-legal li { @apply text-[15px] leading-7 text-ink/80; }
+  .prose-legal ul { @apply ml-5 list-disc space-y-1; }
+  .prose-legal p { @apply mb-3; }
+}
