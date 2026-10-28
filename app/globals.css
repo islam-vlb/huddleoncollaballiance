@@ -6,8 +6,9 @@
   --ink: #14123f;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 body {
+  overflow-x: clip;
   @apply bg-mist font-sans text-ink antialiased;
   background-image:
     radial-gradient(900px 400px at 100% -5%, rgba(0, 201, 177, 0.10), transparent 60%),
